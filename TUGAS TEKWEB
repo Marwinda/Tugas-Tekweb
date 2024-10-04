@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="image.png" alt="Foto Profil" width="300">
+    <h2><b>Tentang Saya</b></h2>
+
+    <h3><b>Haloo, Nama Saya Marwinda</b></h3>
+    <p>Saya lahir di Sidomulyo, Tanggal 08 Maret 2005, Saya adalah Mahasiswa disalah satu Perguruan Tinggi Swasta di Yogyakarta, yaitu Universitas Ahmad Dahlan, saya mengambil Program Studi Sistem Informasi dan sekarang sudah disemester 3.<p>
+
+    <h3>Hobi</h3>
+    <p>Ini bukan hobi, tapi kegiatan atau olahraga yang sering atau saya suka yaitu:</p>
+    <ul>
+        <li>Silat, saya sudah mengikuti silat sejak saya masih di Sekolah Dasar</li>
+        <li>Badminton, salah satu olahraga yang saya suka yaitu badminton</li>
+        <li>Ketika gabut saya juga suka menonton anime disaat saya gabut</li>
+    </ul>
+
+    <h3><b>Sosmed</b></h3>
+    <p>Instagram <a href="https:/Instagram.com/@marwndaa">@marwndaa</a></p>
+    <p>Tiktok <a href="https:/Tiktok.com/@19marss">@19marss</a></p>
+</body>
+</html>
