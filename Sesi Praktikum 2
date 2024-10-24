@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="style.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prak03</title>
+</head>
+
+<body>
+    <img src="image.png" alt="foto">
+    <h1>About me</h1>
+    <p>Nama            : Marwinda</p>
+    <p>NIM             : 2300016154</p>
+    <p>Kelas Praktikum : E</p>
+    <p>Kelas Teori     : B</p>
+
+    <h2>Hobby</h2>
+    <ul>
+        <li>Drawing</li>
+        <li>Reading Komik</li>
+        <li>Playing Badminton</li>
+    
+    </ul>
+
+    <!-- Dropdown untuk mengubah warna latar brlakang-->
+     <select
+onchange="changeBackgroundColor (this.value)">
+        <option value="">Pilih Warna Latar Belakang</option>
+        <option value="lightblue">Light Blue</option>
+        <option value="Lightgreen">Light Green</option>
+        <option value="Lightcoral">Light Coral</option>
+    </select>
+
+    <!---->
+
+    <script>
+        function changeBackgroundColor(color) {document.body.style.backgroundColor;}
+        function changeFontSize(size) {document.body.style.fontSize = size + 'px';}
+        function changeToggleDarkMode() {document.body.style.classList.toggle('dark-mode');}
+        function changeFontStyle(font) {document.body.style.fontFamily = font;}
+    </script>
+</body>
+
+</html>
+
+p {
+    color: black;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    border: 0px solid #f5f5f5;
+    border-left: 10px solid #2ebaed;
+}
+
+li {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    border: 0px solid #f5f5f5;
+    border-left: 10px solid #2ebaed;
+}
+
+h1,
+h2,
+h3 {
+    font-size: 30px;
+    color: rgb(42, 183, 234);
+}
+
+h1 {
+    width: 140px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    border: 0px solid #f5f5f5;
+    border-left: 10px solid #f5f5f5;
+}
+
+h2 {
+    width: 95px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    border: 0px solid #f5f5f5;
+    border-left: 10px solid #f5f5f5;
+}
+
+h3 {
+    width: 115px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    border: 0px solid #f5f5f5;
+    border-left: 10px solid #f5f5f5;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 10px solid #2ebaed;
+}
+
+html {
+    background-color: #f5f5f5;
+}
+
+p,
+li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #ff9500;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+
+body {
+    background-color: #d4cece;
+    /* Light grey background */
+}
