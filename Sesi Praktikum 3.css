@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff; /* Solid white background */
+    color: #333; /* Dark text color for contrast */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
+}
+
+.container {
+    background-color: #f9f9f9; /* Light gray background for the container */
+    border-radius: 10px;
+    padding: 30px;
+    width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.controls,
+.todo-container {
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.control-item {
+    margin-bottom: 15px; /* Space between controls */
+}
+
+label {
+    display: block;
+}
+
+select,
+input[type='range'],
+button,
+input[type='text'] {
+    width: calc(100% - 20px);
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Light border for inputs */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Input Field Focus State */
+select:focus,
+input[type='range']:focus,
+input[type='text']:focus {
+    outline: none;
+    border-color: #2575fc; /* Highlight color on focus */
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+}
+
+input[type='text'] {
+    width: calc(100% - 22px);
+}
+
+button {
+    background-color: #2575fc; /* Button color */
+    color: white; /* Button text color */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1e5bbd; /* Button hover color */
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0.05); /* Slightly darkened background for list items */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.completed {
+    text-decoration: line-through; /* Strike-through for completed tasks */
+}
+
+.completed button {
+    color: #ff4d4d; /* Red color for delete button when completed */
+}
+
+/* Dark Mode Styles */
+.dark-theme {
+    background-color: #15181f; /* Dark background for body */
+    color: #e5e5e5; /* Light text color for contrast */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-theme .container {
+    background-color: #2c2f33; /* Darker background for container in dark mode */
+}
+
+.dark-theme select,
+.dark-theme input[type='range'],
+.dark-theme input[type='text'] {
+    background-color: #3c3f43; /* Darker background for inputs in dark mode */
+    color: #e5e5e5;
+    border: 1px solid #555;
+}
+
+.dark-theme button {
+    background-color: #7289da; /* Button color in dark mode */
+}
+
+.dark-theme button:hover {
+    background-color: #5a6fb3; /* Button hover color in dark mode */
+}
+
+.dark-theme li {
+    background-color: rgba(255, 255, 255, 0.1); /* Darker background for list items in dark mode */
+}
