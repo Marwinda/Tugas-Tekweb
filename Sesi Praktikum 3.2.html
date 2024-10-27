@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="Tekweb3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My To-Do List</h1>
+        
+        <div class="todo-container">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <button id="addTaskBtn">Add</button>
+        </div>
+
+        <h2>Change Appearance</h2>
+
+        <div class="controls">
+            <select id="bgColor">
+                <option value="">Select Background Color</option>
+                <option value="#ffcccb">Light Red</option>
+                <option value="#ffeb3b">Light Yellow</option>
+                <option value="#a5d6a7">Light Green</option>
+                <option value="#64b5f6">Light Blue</option>
+                <option value="#ba68c8">Light Purple</option>
+                <option value="#ffffff">White</option>
+                <option value="#f0f0f0">Light Gray</option>
+                <option value="#000000">Black</option>
+            </select>
+
+            <button id="increaseFontSize">Increase Font Size</button>
+            <button id="decreaseFontSize">Decrease Font Size</button>
+
+            <button id="toggleDarkMode">Toggle Dark Mode</button>
+
+            <button id="changeFontStyle">Change Font Style</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="Tekweb3.js"></script>
+</body>
+</html>
