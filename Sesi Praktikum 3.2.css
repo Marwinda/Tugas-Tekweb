@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 30px;
+    width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.controls,
+.todo-container {
+    margin-bottom: 20px;
+}
+
+select,
+button,
+input[type='text'] {
+    width: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+button {
+    background-color: #2575fc;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #1e5bbd;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.completed button {
+    color: #ff4d4d;
+}
+
+/* Dark Mode Styles */
+.dark-theme {
+    background-color: #15181f;
+    color: #e5e5e5;
+}
+
+.dark-theme .container {
+    background-color: #2c2f33;
+}
+
+.dark-theme select,
+.dark-theme input[type='text'] {
+    background-color: #3c3f43;
+    color: #e5e5e5;
+    border: 1px solid #555;
+}
+
+.dark-theme button {
+    background-color: #7289da;
+}
+
+.dark-theme button:hover {
+    background-color: #5a6fb3;
+}
+
+.dark-theme li {
+    background-color: rgba(255, 255, 255, 0.1);
+}
